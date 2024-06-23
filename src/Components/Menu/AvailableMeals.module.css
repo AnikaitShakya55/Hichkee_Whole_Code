@@ -1,0 +1,66 @@
+
+
+.headingContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 34px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.subHeading {
+  font-size: 20px;
+  color: #666; 
+  
+
+}
+.mealRow {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10rem;
+  margin-right: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mealCol {
+  padding: 0 15px;
+  margin-bottom: 35px;
+}
+
+.Card {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Card:hover .Card-Button {
+  display: block;
+}
+
+.Card-Button {
+  display: none;
+}
+
+.Card-Button button {
+  margin-top: 10px;
+}
+
+.input {
+  width: 50px;
+}
+
+.input:hover {
+  border-color: red;
+}

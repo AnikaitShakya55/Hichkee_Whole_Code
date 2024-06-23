@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200;1,300;1,600&family=Protest+Riot&display=swap');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary {
+  text-align: center;
+  max-width: 45rem;
+  width: 90%;
+  margin: auto;
+  margin-top: -10rem;
+  position: relative;
+  background-color: #fff;
+  color: #220516;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+.summary h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  width: 800px;
+  font-weight: bolder;
+  padding-right: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+  font-family: 'Poppins';
+}
+
+.videoContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.leftContent {
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.rightContent {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 14px;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 768px) {
+  .summary {
+    margin-top: -5rem;
+    max-width: 30rem;
+    padding: 0.5rem;
+  }
+
+  .summary h2 {
+    font-size: 1.5rem;
+    padding-right: 5px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

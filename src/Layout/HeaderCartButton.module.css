@@ -1,0 +1,90 @@
+/* HeaderCartButton.module.css */
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #252525; /* Dark grey background color */
+  color: #fff; /* White text color */
+  padding: 0.75rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-right: -100px;
+  position: relative; /* Position relative for badge positioning */
+}
+
+.button:hover {
+  background-color: #4caf50; /* Green background color on hover */
+}
+
+.icon {
+  width: 2rem; /* Increase the width */
+  height: 2rem; /* Increase the height */
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: #525252; /* Dark grey background color */
+  color: #fff; /* White text color */
+  padding: 0.35rem 1rem; /* Increased padding for badge */
+  border-radius: 50%; /* Make the badge circular */
+  margin-left: 1rem;
+  font-weight: bolder;
+  position: absolute; /* Position absolute for badge positioning */
+  top: 50%; /* Position the badge at the center vertically */
+  right: -10px; /* Position the badge to the right */
+  transform: translateY(-50%); /* Center the badge vertically */
+  transition: all 0.3s ease; /* Smooth transition for badge size and color */
+}
+
+.button:hover .badge {
+  background-color:  #252525; /* Darker grey badge color on hover */
+  transform: scale(1.2); /* Increase badge size on hover */
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    position: absolute;
+    top: 2vh;
+    left: 45vh;
+    font-size: 0.8rem; /* Decrease button text size for smaller screens */
+  }
+
+  .icon {
+    width: 1.5rem; /* Decrease icon size for smaller screens */
+    height: 1.5rem; /* Decrease icon size for smaller screens */
+  }
+
+  .badge {
+    padding: 0.25rem 0.75rem; /* Decrease padding for badge on smaller screens */
+    margin-left: 0.5rem; /* Adjust margin for badge on smaller screens */
+    right: 5%; /* Position the badge from the right side of the navbar */
+    font-size: 0.7rem; /* Decrease badge text size for smaller screens */
+  }
+}
+
